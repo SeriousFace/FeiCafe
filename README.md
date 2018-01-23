@@ -251,8 +251,11 @@ TabHost	host	TabWidget	widget
 slide_in_from_top，从头部滑动进入
 zoom_enter，变形进入
 shrink_to_middle，中间缩小
+
 注释规范
+
 Java 程序有两类注释：实现注释(implementation comments)和文档注释(document comments)。实现注释是使用/.../和//界定的注释。文档注释(被称为"doc comments")由/**...*/界定。文档注释可以通过javadoc 工具转换成HTML 文件。
+
 1. 文件头注释
 
 文件顶部统一添加版权声明，声明的内容如下：
@@ -263,6 +266,7 @@ Java 程序有两类注释：实现注释(implementation comments)和文档注�
      * 版本信息，版本号
      */
 注释模板及设置方法见下面。
+
 2. 类和接口注释
 
 类和接口统一添加javadoc注释，内容如下。
@@ -308,6 +312,7 @@ Eclipse设置方法注释模板方法如下：
 /**
  * ${tags}
  */
+ 
 4. 类成员变量和常量注释
 
 public和protected成员变量和常量需要使用javadoc形式的注释，以说明当前变量或常量的含义；其他成员变量和常量可以添加//注释，优先采用右侧//来注释，若注释说明太长则在上方添加注释。
@@ -321,13 +326,16 @@ public和protected成员变量和常量需要使用javadoc形式的注释，以�
     private int id; // 券id
     private String name; // 券名称
     private String introduce; // 券简介
+    
 5. 其他注释
 
 方法内部的注释 如果需要多行 使用**/*…… */形式，如果为单行是用//……形式的注释。不要在方法内部使用 javadoc 形式的注释“/**……**/”**，简单的区分方法是，javadoc形式的注释在 eclipse中为蓝色，普通注释为绿色。
+
 6. TODO注释
 
 如果代码是暂时的、短期的解决方案或够用但不够完美的使用TODO注释：
 //TODO：Remove this code after the UrlTable2 has been checked in.
+
 7. XML注释
 
 规约：如果当前layout 或资源需要被多处调用，或为公共使用的layout（若list_item），则需要在xml写明注释。要求注释清晰易懂。
