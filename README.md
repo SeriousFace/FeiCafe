@@ -4,7 +4,17 @@
 
 https://github.com/SeriousFace/SeriousFace
 
-【3】规范
+【3】问题收集
+
+【4】有趣的网址
+
+【5】项目下载地址
+
+（1）奕报告 ： http://android.myapp.com/myapp/detail.htm?apkName=com.lysoft.android.lyyd.report
+
+（2）神州帮帮 ： 
+
+【6】规范
 
 Android编码规范
 
@@ -380,10 +390,3 @@ versionCode：24101~24199 前3位对应versionName，后面两位是开发或者
 1.0 对应 10001
 2.4.1紧急修复一个版本，不属于常规升级，可以使用2.4.101 对应24101
 
-
-
-【4】问题收集
-
-【5】有趣的网址
-
-【6】项目下载地址
