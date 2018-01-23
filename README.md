@@ -18,8 +18,7 @@ https://github.com/SeriousFace/SeriousFace
 
 【5】项目下载地址
 
-（1）![图标]（ http://p0.so.qhmsg.com/bdr/_240_/t012125208fe1464c1f.jpg ）
-奕报告 ： http://android.myapp.com/myapp/detail.htm?apkName=com.lysoft.android.lyyd.report
+（1）奕报告 ： http://android.myapp.com/myapp/detail.htm?apkName=com.lysoft.android.lyyd.report
 
 （2）神州帮帮 ： 
 
