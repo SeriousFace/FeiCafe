@@ -15,9 +15,11 @@ Android编码规范
 1. 编码格式
 
 文件编码格式统一用UTF-8
+
 2. Tab缩进
 
 Tab缩进统一为4个空格。将Tab size设置为4，切换到不同tab长度的环境时还能继续保持统一的缩进样式。
+
 3. 花括号
 
 花括号不要单独一行，和它前面的代码同一行。而且，花括号与前面的代码之间用一个空格隔开。
@@ -29,6 +31,7 @@ public void method() { // Good
  public void method(){ // Bad
  
 }
+
 4. 空格
 
 if、else、for、switch、while等逻辑关键字与后面的语句留一个空格隔开。
@@ -62,6 +65,7 @@ public class LoginActivity{//Bad
     }
     
 }
+
 5. 空行
 
 将逻辑相关的代码段用空行隔开，以提高可读性。空行也只空一行，不要空多行。在以下情况需用一个空行：
@@ -69,33 +73,42 @@ public class LoginActivity{//Bad
 方法内的两个逻辑段之间
 方法内的局部变量和方法的第一条逻辑语句之间
 常量和变量之间
+
 6. 表达式换行
 
 当一个表达式无法容纳在一行内时，可换行显示，另起的新行用8个空格缩进。
 public void someMethod(longExpression1, longExpression2,
         longExpression3, longExpression4, longExpression5);
+	
 7. 声明变量
 
 一行声明一个变量，不要一行声明多个变量，这样有利于写注释。
 private String param1; // 参数1private String param2; // 参数2
+
 8. 行宽
 
 行宽设置为100，设置格式化时自动断行到行宽位置。
+
 9. 方法行数
 
 一个方法最多不要超过40行代码，如果方法太长，说明当前方法业务逻辑已经非常复杂，那么就需要进行方法拆分，保证每个方法只作一件事。
+
 10. 使用快捷键进行代码自动格式化
 
 Mac Eclipse：command + shift + f
+
 11. 单位
 
 文字大小的单位统一用sp，控件大小的单位统一用dp
+
 12. 资源文件
 
 字符串统一在string.xml中定义
 颜色值统一在color.xml中定义，不要使用系统的颜色
 尺寸值统一在dimens.xml中定义
+
 命名规范
+
 1. 包命名
 
 命名规则：一个唯一包名的前缀总是全部小写的ASCII 字母并且是一个顶级域名，通常是com，edu，gov，mil，net，org。包名的后续部分根据不同机构各自内部的命名规范而不尽相同。这类命名规范可能以特定目录名的组成来区分部门 (department) ，项目(project)，机器(machine)，或注册名(login names)。
@@ -113,6 +126,7 @@ com.xizi.xzmpo.service 放服务
 com.xizi.xzmpo.util 放工具
 com.xizi.xzmpo.widget 放控件
 com.xizi.xzmpo.constant 放常量
+
 2. 类和接口命名
 
 命名规则：类名是一个名词，采用大小写混合的方式，每个单词的首字母大写。尽量使你的类名简洁而富于描述。使用完整单词，避免缩写词(除非该缩写词被更广泛使用，像 URL，HTML)。
@@ -128,18 +142,25 @@ service类，命名以Service为后缀，如：DownloadService
 adapter类，命名以Adapter为后缀，如：CouponListAdapter
 工具类，命名以Util为后缀，如：EncryptUtil
 接口一般要使用able、ible、er 等后缀，如： JPushReceiver
+
 3. 方法命名
 
 命名规则：方法名是一个动词，采用大小写混合的方式，第一个单词的首字母小写，其后单词的首字母大写。
 例如： public void run(); public String getBookName();
 类中常用方法的命名：
+
 1.类的获取方法（一般具有返回值）一般要求在被访问的字段名前加上get，如
 getFirstName()，getLastName()。一般来说，get前缀方法返回的是单个值，find前缀的方法返回的是列表值。
+
 2.类的设置方法（一般返回类型为void）：被访问字段名的前面加上前缀 set，如
 setFirstName(),setLastName().
+
 3.类的布尔型的判断方法一般要求方法名使用单词 is或has 做前缀，如isPersistent()，isString()。或者使用具有逻辑意义的单词，例如equal 或equals。
+
 4.类的普通方法一般采用完整的英文描述说明成员方法功能，第一个单词尽可能采用动词，首字母小写，如openFile(), addCount(), initView(), loadData()。
+
 5.构造方法应该用递增的方式写。（参数多的写在后面）。
+
 4. 变量命名
 
 命名规则：第一个单词的首字母小写，其后单词的首字母大写。变量名不应以下划线或美元符号开头，尽管这在语法上是允许的。变量名应简短且富于描述。变量名的选用应该易于记忆，即，能够指出其用途。尽量避免单个字符的变量名，除非是一次性的临时变量。
@@ -147,15 +168,18 @@ setFirstName(),setLastName().
 规约：变量命名也必须使用驼峰规则，但是首字母必须小写，变量名尽可能的使用名词或名词词组。同样要求简单易懂，不允许出现无意义的单词。
 如：String bookName; 正确
 如：String bookNameString; 错误！
+
 5. 常量命名
 
 命名规则：类常量的声明，应该全部大写，单词间用下划线隔开。
 例如：static final int MIN_WIDTH = 4;
 例如：static final int MAX_WIDTH = 999;
 例如：static final int GET_THE_CPU = 1;
+
 6. 异常命名
 
 自定义异常的命名必须以Exception为结尾。
+
 7. layout命名
 
 规约：layout xml 的命名必须以 全部单词小写，单词间以下划线分割，并且使用名词或名词词组。命名规则为：组件类型_{范围_}功能，范围可选，只在有明确定义的范围内才需要加上。
@@ -167,6 +191,7 @@ item_list_{范围_}功能，为ListView的item命名格式
 item_grid_{范围_}功能，为GridView的item命名格式
 header_list_{范围_}功能，为ListView的HeaderView命名格式
 footer_list_{范围_}功能，为ListView的FooterView命名格式
+
 8. 控件id命名
 
 规约：layout 中所使用的id必须以全部单词小写，单词间以下划线分割，并且使用名词或名词词组，并且要求能够通过id直接理解当前组件要实现的功能。命名规则为：控件缩写_{范围_}意义，范围可选，只在有明确定义的范围内才需要加上。
@@ -184,6 +209,7 @@ TableLayout	table	TableRow	row
 LinearLayout	llayout	RelativeLayout	rlayout
 ScrollView	scroll	SearchView	search
 TabHost	host	TabWidget	widget
+
 9. strings命名
 
 命名规则为： 类型_{范围_}功能，范围可选。
@@ -196,10 +222,12 @@ TabHost	host	TabWidget	widget
 编辑框的提示文字，命名格式为：hint_提示信息
 图片的描述文字，命名格式为：desc_图片文字
 对话框的文字，命名格式为：dialog_文字
+
 10. colors命名
 
 命名规则为： 以RGB颜色值命名。
 如：#000000命名为000000， #797979命名为797979
+
 11. drawable命名
 
 命名规则为： 前缀{_控件}{_范围}{_后缀}，控件、范围、后缀可选，但控件和范围至少要有一个。
@@ -212,6 +240,7 @@ TabHost	host	TabWidget	widget
 区分状态时，选中时的状态，添加selected后缀
 区分状态时，不可用时的状态，添加disable后缀
 多种状态的，添加selector后缀（一般为ListView的selector或按钮的selector）
+
 12. 动画文件命名
 
 命名规则为： 动画类型_动画方向
