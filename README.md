@@ -8,6 +8,14 @@ https://github.com/SeriousFace/SeriousFace
 
 【4】有趣的网址
 
+（1）Android 名企面试题及涉及知识点整理 ： https://github.com/helen-x/AndroidInterview
+
+（2）《Android 开发工程师面试指南》 ： https://www.diycode.cc/wiki/androidinterview
+
+（3）国内一线互联网公司内部面试题库 ： https://github.com/JackyAndroid/AndroidInterview-Q-A/blob/master/README-CN.md
+
+（4）简书关于Android的文章 ： http://www.jianshu.com/u/02f4a9a23381
+
 【5】项目下载地址
 
 （1）奕报告 ： http://android.myapp.com/myapp/detail.htm?apkName=com.lysoft.android.lyyd.report
