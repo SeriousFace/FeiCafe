@@ -16,13 +16,7 @@ https://github.com/SeriousFace/SeriousFace
 
 （4）简书关于Android的文章 ： http://www.jianshu.com/u/02f4a9a23381
 
-【5】项目下载地址
-
-（1）奕报告 ： http://android.myapp.com/myapp/detail.htm?apkName=com.lysoft.android.lyyd.report
-
-（2）神州帮帮 ： 
-
-【6】规范
+【5】规范
 
 Android编码规范
 
